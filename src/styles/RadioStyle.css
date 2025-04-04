@@ -1,0 +1,25 @@
+.radio-container {
+    display: flex;
+    align-items: center;
+    border: var(--main-color) 3px solid;
+    border-radius: 6px;
+    padding: 2px;
+    gap: 2px;
+}
+.radio-input {
+    display: none;
+}
+.selected {
+    background-color: #ffffff76;
+    border-radius: 2px;
+}
+
+.radio-container:has(input:disabled) {
+    border: 2px solid #d3d3d3; /* Lighter border */
+    opacity: 0.6; /* Slight fade effect */
+    cursor: not-allowed; /* Show "not-allowed" cursor */
+}
+
+label:has(input:disabled):hover {
+    cursor: not-allowed;
+}

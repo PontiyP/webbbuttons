@@ -1,0 +1,14 @@
+.select-container {
+    display: flex;
+    align-items: center;
+    border: var(--main-color) 3px solid;
+    border-radius: 6px;
+    padding: 2px;
+    gap: 2px;
+    width: fit-content;
+}
+.select-container:has(select:disabled) {
+    border: 2px solid #d3d3d3;
+    opacity: 0.6;
+    cursor: not-allowed;
+}

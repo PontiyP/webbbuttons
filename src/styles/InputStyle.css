@@ -1,0 +1,69 @@
+
+.input-container {
+    padding: 0 4px;
+    display: flex;
+    gap: 4px;
+    align-items: center;
+    border: var(--main-color) 3px solid;
+    border-radius: 6px;
+    }
+.input-field {
+}
+.input-number {
+    line-height: 0px;
+    text-align: end;
+}
+.input-number::-webkit-outer-spin-button,
+.input-number::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+.input-color {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: none;
+    width: 2.4vw;
+    height: 2.4vw;
+    cursor: pointer;
+    padding: 0;
+    background: none;
+}
+.input-color::-webkit-color-swatch {
+    border: var(--main-color) 1px solid;
+    border-radius: 3px;
+    width: 100%;
+    height: 100%;
+}
+.input-file {
+    display: none;
+}
+.input-icon {
+    color: var(--main-color);
+}
+.input-label {
+    color: var(--main-color);
+    font-size: 1.2vw;
+    font-weight: bold;
+    /*margin: 5px;*/
+}
+.brdr {
+    width: 19px;
+    height: 19px;
+    background-color: var(--bkgnd-color);
+    position: absolute;
+    border: var(--main-color) 1px solid;
+    border-radius: 2px;
+    margin-left: 31px;
+    margin-top: 2px;
+
+}
+
+.input-container:has(input:disabled) {
+    border: 2px solid #d3d3d3; /* Lighter border */
+    opacity: 0.6; /* Slight fade effect */
+    cursor: not-allowed; /* Show "not-allowed" cursor */
+}
+
+input:disabled:hover {
+    cursor: not-allowed;
+}
